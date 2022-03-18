@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --tenne-tawny: #ffa10c;
+  --tenne-tawny-dark: #ffae00;
+  --primary: #fff;
+  --secondary: #202020;
+}
+body {
+  font-weight: 300;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  font-family: "Poppins", sans-serif;
+}
+
+/*  */
+.event-content-header {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),
+    url("/image/coleen-rivas-OZ2rS2zCjNo-unsplash.jpg") center center/cover
+      no-repeat;
+  height: 85vh;
+  width: 100%;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+  object-fit: contain;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.btn {
+  padding: 8px 15px;
+  border-radius: 2px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.text {
+  opacity: 0.8;
+}
+.title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/*  */
+.container-event {
+  margin-top: 20px;
+  width: 100%;
+}
+.event-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1280px;
+  padding: 2rem;
+  background: transparent;
+  text-align: center;
+  color: #ffffff;
+}
+
+.event-wrapper h2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: 700;
+  justify-content: center;
+  margin-top: 3vh;
+}
+
+.event-search {
+  margin: 5rem 0;
+}
+
+.event-search-box {
+  margin: 1.2rem 0;
+  display: flex;
+  align-items: stretch;
+}
+.search-control,
+.search-btn {
+  width: 100%;
+}
+.search-control {
+  padding: 0 1rem;
+  font-size: 1.1rem;
+  font-family: inherit;
+  outline: 0;
+  border: 1px solid var(--tenne-tawny);
+  color: var(--tenne-tawny);
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+}
+.search-control::placeholder {
+  color: var(--tenne-tawny);
+}
+
+.gone {
+  display: none;
+}
+
+.exist {
+  display: block;
+}
+
+.search-btn {
+  width: 55px;
+  height: 55px;
+  font-size: 1.8rem;
+  background: var(--tenne-tawny);
+  color: #fff;
+  border: none;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  transition: all 0.4s linear;
+  -webkit-transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  -ms-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+}
+.search-btn:hover {
+  background: var(--tenne-tawny-dark);
+}
+.event-result {
+  margin-top: 4rem;
+}
+#event {
+  margin: 2.4rem 0;
+}
+.event-item {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+  -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+  filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+  border-radius: 10px;
+  overflow: hidden;
+  text-decoration: none;
+  margin-top: 40px;
+}
+.event-img {
+  display: block;
+  background-image: url("../image/yeo-khee-mfBFoA6l7DY-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  max-width: 100%;
+  height: 210px;
+  object-fit: cover;
+  transition: all 0.2s linear;
+}
+
+.event-img:hover {
+  transform: scale(1.1);
+}
+
+.event-container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  max-width: 1120px;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.text-wrap {
+  display: flex;
+  align-self: center;
+  height: 100%;
+  text-align: center;
+}
+
+.event-name {
+  padding: 1.5rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+.event-name h5 {
+  font-size: 1rem;
+}
+
+.event-name h3 {
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+.event-btn {
+  text-decoration: none;
+  width: 100%;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-weight: bold;
+  margin-top: 10px;
+  padding: 15px 10px;
+  color: #ffa10b;
+  background-color: #ffffff;
+  text-align: center;
+}
+.event-btn:hover {
+  background-color: #ffa10b;
+  color: #ffffff;
+}
+
+/*  */
+.notFound {
+  grid-template-columns: 1fr !important;
+  color: var(--tenne-tawny);
+  font-size: 1.8rem;
+  font-weight: 600;
+  width: 100%;
+}
+
+/* Media Queries */
+@media screen and (min-width: 600px) {
+  .event-search-box {
+    width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #event {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  .event-item {
+    margin: 0;
+  }
+  .event-details {
+    width: 700px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #event {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
